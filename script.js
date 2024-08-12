@@ -8,7 +8,7 @@ async function fetchWeather() {
 
     const apiKey = '30d084cfadfaa8eb3145a85f6f00f6d0'; // Replace with your OpenWeatherMap API key
     const location = 'Bengaluru'; // You can change this to any location
-    const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
     try {
         const response = await fetch(apiUrl);
