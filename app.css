@@ -5966,7 +5966,7 @@ body {
 
 .card {
   /* background-image: url("https://i.imgur.com/dpqZJV5.jpg"); */
-  background-image: url("file:images/sliders/weather.jpg");
+  background-image: url("images/sliders/weather.jpg");
   
   background-size: cover;
   width: 300px;
