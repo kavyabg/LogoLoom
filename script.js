@@ -26,10 +26,14 @@ function displayWeather(data) {
     const weatherInfoDiv = document.getElementById('weatherInfo');
     weatherInfoDiv.innerHTML = `
     <div class="extra-space">
-        <h2>Current Weather in ${data.name}</h2>
-        <p>Temperature:</p> <p class="temp"> ${data.main.temp}°C</p>
-        <p>Condition: ${data.weather[0].description}</p>
-        <p>Humidity: ${data.main.humidity}%</p>
+                <div class="weather-location">${data.name}</div>
+        <div class="weather-icon">
+            <img id="icon" src="images/cloudy.png" alt="Weather Icon">
+        </div>
+        <div class="weather-temp">
+            <span id="temperature">${data.main.temp}</span>°C
+        </div>
+        <div class="weather-description" id="description">${data.weather[0].description}</div>
         </div>
     `;
 }
