@@ -5966,13 +5966,13 @@ body {
 
 .card {
   /* background-image: url("https://i.imgur.com/dpqZJV5.jpg"); */
-  background-image: url("images/sliders/weather.jpg");
-  
+  /* background-image: url("file:images/sliders/weather.jpg"); */
+  background: #29abe2;
   background-size: cover;
-  width: 300px;
+  width: max-content;
   /* height: 350px; */
   border-radius: 20px;
-  box-shadow: 0px 8px 16px 4px #9E9E9E;
+  /* box-shadow: 0px 8px 16px 4px #9E9E9E; */
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -5980,7 +5980,7 @@ body {
 }
 
 .extra-space {
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 #weatherInfo h2, p {
@@ -6012,4 +6012,24 @@ body {
 
 .large-font {
   font-size: 60px;
+}
+
+.weather-location {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.weather-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.weather-temp {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  font-size: 1em;
 }
